@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Easy</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+        }
+        section {
+            height: 600px;
+            width: auto;
+            margin-top: 50px;
+            border: 5px solid black;
+            display: flex;
+            flex-direction: column;   
+            align-items: center;    
+        }
+        header {
+            height: 200px;
+            width: 1300px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: larger;
+            font-weight: 800;
+            margin-top: 20px;
+        }
+        .bbox{
+            height: 400px;
+            width: 1300px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+        .box {
+            height: 400px;
+            width: 400px;
+            border: 1px solid rgb(44, 41, 41);border-radius: 10px;
+            margin-top: 30px;display:flex;align-items: center;flex-direction: column;
+            font-size: large;font-weight: 500;
+            text-align: left;
+            margin: 10px;
+        }
+        .img1,.img2,.img3{
+            height: 450px;
+            width: 350px;
+            margin-top: 10px;border: 1px solid gray;
+            background-size: cover;background-position: center;background-repeat: no-repeat;
+        }
+        .img1{
+            background-image: url("https://tiimg.tistatic.com/fp/1/008/657/makeup-foundation-777.jpg");
+        }
+        .img2{
+           background-image: url("https://www.sacelady.com/cdn/shop/products/SL211.jpg?v=1667383271&width=1024");
+        }
+        .img3{
+            background-image: url("https://shopaarel.com/cdn/shop/files/BigBangBlushShade_02Product_USP.jpg?v=1736343604");
+        }
+
+        footer{
+            height: 50px;
+            width: 380px;
+            border: 1px solid gray;border-radius: 10px;
+            background-color: blue;color: white;
+            text-align: center;align-content: center;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 460px){
+            section{
+                width: 100vw;
+                height: auto;
+                border: none;
+            }
+            header{
+                width: 95vw;
+                font-size: medium;
+            }
+            .bbox{
+                width: 95vw;
+                height: auto;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            .box{
+                width: 98%; 
+                margin: 10px 0;
+            }
+            .img1,.img2,.img3{
+                width: 95%; 
+                height: 250px;
+            }
+            footer{
+                width: 95%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h1>ShopEasy</h1>
+        </header>
+        <div class="bbox">
+        <div class="box">
+            <div class="img1"></div>
+            <p><span style="font-size: 1.5rem;font-weight: bolder;">MAC- MAKEUP FOUNDATION</span>
+            <br><br>Long-lasting. Water-proof with SPF: 15. Available<br><br>
+            <span style="color: green;">₹759</span> &ensp;<s>₹1,199</s></p>
+            <footer>Add to Cart</footer>
+        </div>
+        <div class="box">
+            <div class="img2"></div>
+            <p><span style="font-size: 1.5rem;font-weight: bolder;">SACE LADY- MATTE PRIMER</span>
+            <br><br>Matte finish. Moisturizing smooth. Available<br><br>
+            <span style="color: green;">₹899</span> &ensp;<s>₹1,199</s></p>
+            <footer>Add to Cart</footer>
+        </div>
+        <div class="box">
+            <div class="img3"></div>
+            <p><span style="font-size: 1.5rem;font-weight: bolder;">MAC- BLUSHER PALLETE</span>
+            <br><br>Radiant glow. Velvet finish. Seamless blend. Available<br><br>
+            <span style="color: green;">₹859</span> &ensp;<s>₹1,199</s></p>
+            <footer>Add to Cart</footer>
+        </div>
+    </div>
+    </section>
+</body>
+
+</html>
